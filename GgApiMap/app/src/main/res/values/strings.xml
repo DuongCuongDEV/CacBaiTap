@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GgApiMap</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="key_ggMap_api">AIzaSyDlPQr7e8wpg81OE8paYvqYZvZUI12HovM</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

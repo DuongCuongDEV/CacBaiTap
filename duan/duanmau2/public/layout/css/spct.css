@@ -1,0 +1,204 @@
+h1{
+    text-align: center;
+}
+span{
+    color: red;
+}
+.row img{
+    text-align: center;
+    width: 80%;
+    margin-left: 50px;
+    border: 5px solid #269abc;
+    height: 900px;
+}
+.tensp {
+    width: 20%;
+    margin-top: 20px;
+    background-color: beige;
+    border: 1px solid black;
+    color: red;
+    border-radius: 10px;
+    margin-left: 650px;
+    padding: 10px;
+}
+.bocnd img{
+    width: 150%;
+}
+.chung{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.bocnd{
+    /*display: flex;*/
+}
+.kc-img{
+    padding: 20px 200px;
+}
+.product-color ul li {
+    width: 18px;
+    height: 18px;
+    background: #e4e0e0;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.product-color  ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.perched-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.cart-plus-minus {
+    width: 88px;
+    flex: 0 0 88px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+.cart-plus-minus form {
+    position: relative;
+}
+/* form {
+    display: block;
+    margin-top: 0em;
+} */
+.cart-plus-minus form input {
+    width: 100%;
+    border: 1px solid #f0f0f0;
+    padding: 15px 45px 15px 15px;
+    text-align: center;
+    height: 55px;
+    font-family: 'Jost', sans-serif;
+    color: #544842;
+    font-weight: 500;
+}
+
+
+.cart-plus-minus form input {
+    width: 100%;
+    border: 1px solid #f0f0f0;
+    padding: 15px 45px 15px 15px;
+    text-align: center;
+    height: 55px;
+    font-family: 'Jost', sans-serif;
+    color: #544842;
+    font-weight: 500;
+}
+button, input {
+    overflow: visible;
+}
+.qtybutton-box {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    background: #eef1f2;
+    width: 30px;
+    text-align: center;
+    z-index: 1;
+}
+.qtybutton-box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background: #dcdcdc;
+}
+.qtybutton-box > span.plus {
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.qtybutton-box > span {
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    height: 50%;
+}
+.qtybutton-box > span img {
+    max-width: 10px;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.qtybutton-box > span.minus.dis {
+    cursor: auto;
+}
+.qtybutton-box > span.minus {
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.qtybutton-box > span {
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    height: 50%;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.cart-plus-minus form input {
+    width: 100%;
+    border: 1px solid #f0f0f0;
+    padding: 15px 45px 15px 15px;
+    text-align: center;
+    height: 55px;
+    font-family: 'Jost', sans-serif;
+    color: #544842;
+    font-weight: 500;
+}
+
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.perched-info > .btn {
+    background: #36363b;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 18px 31px;
+    height: 55px;
+    margin-right: 35px;
+    box-shadow: none;
+}
+.btn {
+    /* -moz-user-select: none; */
+    background: #fff none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0;
+    color: #312620;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    margin-bottom: 0;
+    padding: 21px 36px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-family: 'Jost', sans-serif;
+    box-shadow: 0px 3px 27px 0px rgb(0 0 0 / 17%);
+}
+

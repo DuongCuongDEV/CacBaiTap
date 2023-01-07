@@ -1,0 +1,207 @@
+<?php
+include './model/connect.php';
+$query = "select * from san_pham";
+$sp = getAll($query);
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public//layout//css//index.css">
+    <script src="https://kit.fontawesome.com/22487df9f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./public/layout/css/spct.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="logo">
+                <img src="./public//layout///image///logo.jpg" alt="">
+            </div>
+
+            <nav class="menubutton">
+                <ul>
+
+                    <span class="menu">
+                        <div class="a">
+                            <i class="fa-solid fa-bars"></i>
+                            <li><a href="#">Danh Mục </a>
+                                <ul class="submenu">
+                                    <li><a href="#" target="page">Quần áo nam</a></li>
+                                    <li><a href="#" target="page">Quần áo nữ</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="b">
+                            <li><a href="#">Quần áo nam</a>
+                                <ul class="submenu">
+                                    <li><a href="nav/sodotochuc.html" target="page">Cơ cấu tổ chức</a></li>
+                                    <li><a href="nav/gioithieu.html" target="page">Giới thiệu chung</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="nav/hoatdong.html" target="page">Quần áo nữ</a>
+                                <ul class="submenu">
+                                    <li><a href="admin.php" target="page">Hoạt động chuyên môn</a></li>
+
+                                    <li><a href="nav/hoatdong1.html" target="page">Hoạt động đoàn thể</a></li>
+
+                                    <li><a href="nav/hoatdong1.html" target="page">Hoạt động ngoại khóa</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="nav/tainguyen.html" target="page"></a>
+                                <ul class="submenu">
+                                    <li><a href="nav/thuvien.html" target="page">Thư viện ảnh</a></li>
+                                    <li><a href="nav/video.html" target="page">Video</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="nav/lienhe.html" target="page">Liên hệ</a></li>
+                            <li><a href="nav/gopy.html" target="page">Góp ý</a></li>
+
+                    </span>
+    </div>
+
+    </ul>
+    <div class="form">
+        <form action="">
+            <input type="text" name="" id="" placeholder="Tìm kiếm sản phẩm ">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </form>
+
+    </div>
+    <div class="infor">
+        <a href=""><i class="fa-solid fa-location-dot"></i></a>
+        <a href="./view/login.php"><i class="fa-regular fa-user"></i></a>
+        <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+    </div>
+
+    </nav>
+
+
+
+
+
+
+    </header>
+
+
+
+    <div class="deal">
+        <marquee behavior="" sytle="height: 50px; width: 50%;" direction="">Chương trình giảm giá 30% nhân dịp khai trương shop diễn ra từ 10/10 đến 15/10 ! Mua ngay .</marquee>
+    </div>
+
+
+
+
+    <article>
+        <div class="home">
+            <a href="">
+                <i class="fa-solid fa-house"></i>
+                <p>Trang chủ</p>
+            </a>
+        </div>
+    </article>
+
+
+    <div class="login">
+
+    </div>
+    </nav>
+    <div class="chung">
+      
+        <div class="title1">
+            <h2>Nước hoa nữ</h2>
+            <?php foreach ($sp as $value) : ?>
+                <?php if ($value['ma_loai'] == 21) {
+                    echo "<div class='item-product'>
+                    <img src='" . $value['hinh'] . "' alt='' >
+                    <div class='cart'>
+                        <div class='name'>" . $value['ma_san_pham'] . "</div>
+                        <div class='price'>" . $value['ten_san_pham'] . "</div>
+                        <div class='desc'> " . $value['don_gia'] . "</div>
+                    </div>
+                </div>";
+                }; ?>
+            <?php endforeach ?>
+        </div>
+        <div class="bnt">
+            <button type="submit">Xem thêm</button>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="colum">
+            <div>
+                <h4>TRUY CẬP TRANG WEB</h4>
+                <div class="col-1">
+                    <div class="item-1">
+                        <img src="	https://static.chotot.com/storage/default/group-qr.webp" alt="" width="60px" height="60px" />
+                    </div>
+                    <div class="item-1-2">
+                        <img src="	https://static.chotot.com/storage/default/ios.svg" alt="" width="94px" ; height="32px" />
+                        <img src="	https://static.chotot.com/storage/default/android.svg" alt="" width="94px" ; height="32px" />
+                        <img src="https://static.chotot.com/storage/default/huawei_app_install.webp" alt="" width="94px" ; height="32px" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+                <div class="col-1">
+                    <ul>
+                        <li>Trung tâm trợ giúp</li>
+                        <li>An toàn mua bán</li>
+                        <li>Quy định cần biết</li>
+                        <li>Quy chế quyền riêng tư</li>
+                        <li>Liên hệ hỗ trợ</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h4>THÔNG TIN TIN CẬY</h4>
+                <div class="col-1">
+                    <ul>
+                        <li>Giới thiệu</li>
+                        <li>Tuyển dụng</li>
+                        <li>Truyền thông</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h4>LIÊN KẾT</h4>
+                <div class="col-end">
+                    <div class="icon">
+                        <a href="https://www.facebook.com/donghonam.vip.102"><img src="https://static.chotot.com/storage/default/facebook.svg" alt="" width="32px" height="32px" /></a>
+                        <img src="https://static.chotot.com/storage/default/youtube.svg" alt="" width="32px" height="32px" />
+                        <img src="https://static.chotot.com/storage/default/linkedin.svg" alt="" width="32px" height="32px" />
+                    </div>
+                    <div class="sub">
+                        <h4>CHỨNG NHẬN</h4>
+                        <img src="	https://static.chotot.com/storage/default/certificate.webp" alt="" width="130px" height="40px" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="hr"></div>
+        <div class="footer-bot">
+            <p>
+                CÔNG TY TNHH GIẢI KHÁT- Địa chỉ: Phòng 1808, Tầng 18, Mê Linh Point
+                Tower, 02 Ngô Đức Kế, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh
+            </p>
+            <p>Email: trogiup@chotot.vn - Tổng đài CSKH: 19003003 (1.000đ/phút)</p>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

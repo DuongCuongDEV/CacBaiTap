@@ -1,0 +1,68 @@
+*{
+    
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: pink;
+}
+.container{
+    
+    height: 100%;
+    width: 100%;
+}
+form{
+    margin-top: 30px;
+    margin-left: 40%;
+    
+    width: 500px;
+    height: 300px;
+
+}
+h1{
+    text-align: center;
+    margin-right: 230px;
+    margin-bottom: 30px;
+}
+form label{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-style: 'Roboto';
+}
+form input{
+    width: 250px;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: aqua;
+    
+}
+form .remember input{
+    width:30px;
+    height: 15px;
+    margin-bottom: 20px;
+    background: aqua;
+    font-size: 20px;
+  
+}
+form .remember label{
+    font-size: 20px;
+}
+span i{
+    margin-left: -30px;
+    color: black;
+    background: aqua;
+}
+button{
+    width: 100px;
+    height: 40px;
+    background: honeydew;   border-radius: 5px;
+}
+.dk label{
+    font-size: 15px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}

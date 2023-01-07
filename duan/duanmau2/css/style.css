@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.boxcenter{
+    width: 90%;
+    margin: 10px auto;
+}
+aside{
+    border: 1px solid gray;
+    background-color: wheat;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.row h1{
+    color: cadetblue;
+    text-align: center;
+}
+.aside{
+    line-height: 20px;
+    width:100%;
+    margin-top: 15px;
+}
+.quanli a{
+    display: inline-block;
+    line-height: 20px;
+    padding: 0 30px;
+    color:black;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 25px;
+}
+.quanli {
+    margin-left: 120px;
+    margin-top: -30px;
+}
+
+aside p:hover{
+    color:rgb(34, 37, 234);
+}
+.form{
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 10px 390px;
+}
+.themmoi h1{
+    text-align: center;
+    margin-top: 40px;
+}
+.form input{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+}
+.loai{
+    background-color: aqua;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+table{
+    margin-left: 300px;
+    width: 50%;
+    text-align: center;
+}
+.mb10 input{
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: cornsilk;
+    padding: 10px;
+}

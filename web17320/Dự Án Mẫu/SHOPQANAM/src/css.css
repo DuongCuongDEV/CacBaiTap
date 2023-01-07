@@ -1,0 +1,13 @@
+.bg{
+    background:url("img/background\ cam.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 46% 100%;
+    padding-bottom: 90px;
+}
+.bg2{
+    background:url("img/background\ cam.png");
+    background-position: center;
+    background-size: 100% 100%;
+    padding-bottom: 90px;
+}

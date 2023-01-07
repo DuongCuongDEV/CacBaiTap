@@ -1,0 +1,24 @@
+.boxcenter{
+    width: 70%;
+    margin: 0 auto;
+}
+.row{
+    float: left;
+    width: 100%;
+}
+.mb{
+    margin-bottom: 30px;
+}
+.demo{
+    background-color: aliceblue;
+    min-height: 100px;
+}
+.header{
+    background-color: antiquewhite;
+    border: 1px solid cadetblue;
+    font-size: 1vw;
+    color: blue;
+}
+.header h1{
+    margin: 10px 20px;
+}

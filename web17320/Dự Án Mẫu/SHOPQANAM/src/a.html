@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body>
+    <p id="pro" data-price="900" class="py-3 border border-black h-auto">Iphone 13</p>
+
+    <p id="thanhtien" class="py-3 border border-black h-auto">...</p>
+
+    <input type="number" id="qty" class="text-center py-3 w-28 border border-black h-auto">
+
+    <button onclick="mua()" class="w-1/2 px-2 py-3 border border-black">Mua</button>
+    <h1>Tổng tiền: <span id="tong"></span></h1>
+
+    <script>
+        function mua() {
+
+            var pro = document.getElementById('pro');
+            var price = pro.getAttribute('data-price');
+            var quantity = qty.value;
+            var amount = price * quantity;
+            //
+            document.getElementById("thanhtien").innerHTML = amount;
+            document.getElementById("tong").innerText = amount;
+
+        }
+
+    function mua() {
+    //
+    var pro = document.getElementById('pro');
+    var price = pro.getAttribute('data-price');
+    var quantity = qty.value;
+    var amount = price * quantity;
+    //
+    var pri = document.getElementById('pri');
+    var price1 = pri.getAttribute('data-price1');
+    var quantity1 = qty1.value;
+    var amount1 = price1 * quantity1;
+    //
+    var pre = document.getElementById('pre');
+    var price2 = pre.getAttribute('data-price2');
+    var quantity2 = qty2.value;
+    var amount2 = price2 * quantity2;
+    //
+    document.getElementById("td1").innerHTML = amount;
+    document.getElementById("td2").innerHTML = amount1;
+    document.getElementById("td3").innerHTML = amount2;
+    document.getElementById("tong").innerHTML = amount + amount1 + amount2;
+}
+    </script>
+</body>
+
+</html>
